@@ -38,9 +38,81 @@
     <section class="intro">
       <img class="intro__bg" src="back-mobile.jpg" alt="Седона - городок, заслуживающий большего!">
       <p class="intro__title">Оставьте свой отзыв</p>
-      <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </section>
     <h2 class="visually-hidden">Поля для заполнения</h2>
+    <section class="personalData">
+      <p class="personalData_name">
+        <input class="personalData_input" type="text" name="user-name" id="user-name" required>
+        <label class="personalData_label" for="user-name">Имя*:</label>
+      </p>
+      <p class="personalData_surname">
+        <input class="personalData_input" type="text" name="user-surname" id="user-surname" required>
+        <label class="personalData_label" for="user-surname">Фамилия*:</label>
+      </p>
+      <p class="personalData_patronymic">
+        <input class="personalData_input" type="text" name="user-patronymic" id="user-patronymic">
+        <label class="personalData_label" for="user-patronymic">Отчество:</label>
+      </p>
+    </section>
+    <section class="personalContacts">
+      <p class="personalContacts_tel">
+        <input class="personalContacts_tel_input" type="text" name="user-tel" id="user-tel"
+          placeholder="Введите телефон" required>
+        <label class="personalContacts_tel_label" for="user-tel">Контактный телефон*:</label>
+      </p>
+      <p class="personalContacts_email">
+        <input class="personalContacts_email_input" type="email" name="user-email" id="user-email"
+          placeholder="Введите e-mail" required>
+        <label class="personalContacts_email_label" for="user-email">Электронная почта*:</label>
+      </p>
+    </section>
+    <section class="personalImpression">
+      <p class="personalImpression_header">Общее впечатление:</p>
+      <ul class="personalImpression_list">
+        <li class="personalImpression_list-item">
+          <input class="personalImpression_radioBtn" type="radio" name="good" id="good" checked>
+          <label class="personalImpression_label" for="good">Скорее положительное</label>
+        </li>
+        <li class="personalImpression_list-item">
+          <input class="personalImpression_radioBtn" type="radio" name="bad" id="bad">
+          <label class="personalImpression_label" for="bad">Скорее отрицательное</label>
+        </li>
+        <li class="personalImpression_list-item">
+          <input class="personalImpression_radioBtn" type="radio" name="dontKnow" id="dontKnow">
+          <label class="personalImpression_label" for="dontKnow">Затрудняюсь ответить</label>
+        </li>
+      </ul>
+    </section>
+    <section class="personalVisited">
+      <p class="personalVisited_header">Посещенные достопримечательности:</p>
+      <ul class="personalVisited_list">
+        <li class="personalVisited_list-item">
+          <input class="personalVisited_checkbox" type="checkbox" name="devilBridge" id="devilBridge" checked>
+          <label class="personalVisited_label" for="devilBridge">Мост Дьявола</label>
+        </li>
+        <li class="personalVisited_list-item">
+          <input class="personalVisited_checkbox" type="checkbox" name="mountainBell" id="mountainBell" checked>
+          <label class="personalVisited_label" for="mountainBell">Гора-Колокол</label>
+        </li>
+        <li class="personalVisited_list-item">
+          <input class="personalVisited_checkbox" type="checkbox" name="slidePark" id="slidePark" checked>
+          <label class="personalVisited_label" for="slidePark">Слайд-парк</label>
+        </li>
+        <li class="personalVisited_list-item">
+          <input class="personalVisited_checkbox" type="checkbox" name="redRock" id="redRock">
+          <label class="personalVisited_label" for="redRock">Красные скалы</label>
+        </li>
+      </ul>
+    </section>
+    <section class="personalEmotions">
+      <p class="personalEmotions_header">Опишите свои эмоции:</p>
+      <textarea class="personalEmotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="main-bottom__button button">
+        Отправить отзыв
+      </button>
+    </section>
   </main>
   <footer class="page-footer">
     <p class="page-footer__sedonaHash">
