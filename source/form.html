@@ -15,18 +15,12 @@
         <li class="site-list__item">
           <a href="index.html">Главная</a>
         </li>
-      </ul>
-      <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="photo.html">Фото и видео</a>
         </li>
-      </ul>
-      <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="">Форма отзыва</a>
         </li>
-      </ul>
-      <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="">HTML ACADEMY</a>
         </li>
@@ -36,101 +30,103 @@
   <main class="page-main">
     <h1 class="visually-hidden">Страница для отзывов</h1>
     <section class="intro">
-      <img class="intro__bg" src="back-mobile.jpg" alt="Седона - городок, заслуживающий большего!">
-      <p class="intro__title">Оставьте свой отзыв</p>
+      <h2 class="intro__title">Оставьте свой отзыв</h2>
       <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
+      <img class="intro__bg" src="back-mobile.jpg" alt="Седона - городок, заслуживающий большего!">
     </section>
-    <h2 class="visually-hidden">Поля для заполнения</h2>
-    <section class="personalData">
-      <p class="personalData_name">
-        <input class="personalData_input" type="text" name="user-name" id="user-name" required>
-        <label class="personalData_label" for="user-name">Имя*:</label>
+    <fieldset class="personal-data">
+      <legend class="visually-hidden">Ваше ФИО</legend>
+      <p class="personal-data__name">
+        <input class="personal-data__input" type="text" name="user-name" id="user-name" required>
+        <label class="personal-data__label" for="user-name">Имя*:</label>
       </p>
-      <p class="personalData_surname">
-        <input class="personalData_input" type="text" name="user-surname" id="user-surname" required>
-        <label class="personalData_label" for="user-surname">Фамилия*:</label>
+      <p class="personal-data__surname">
+        <input class="personal-data__input" type="text" name="user-surname" id="user-surname" required>
+        <label class="personal-data__label" for="user-surname">Фамилия*:</label>
       </p>
-      <p class="personalData_patronymic">
-        <input class="personalData_input" type="text" name="user-patronymic" id="user-patronymic">
-        <label class="personalData_label" for="user-patronymic">Отчество:</label>
+      <p class="personal-data__patronymic">
+        <input class="personal-data__input" type="text" name="user-patronymic" id="user-patronymic">
+        <label class="personal-data__label" for="user-patronymic">Отчество:</label>
       </p>
-    </section>
-    <section class="personalContacts">
-      <p class="personalContacts_tel">
-        <input class="personalContacts_tel_input" type="text" name="user-tel" id="user-tel"
+    </fieldset>
+    <fieldset class="personal-contacts">
+      <legend class="visually-hidden">Ваши контакты</legend>
+      <p class="personal-contacts__tel contacts-item">
+        <input class="contacts-item__input--tel" type="tel" name="user-tel" id="user-tel"
           placeholder="Введите телефон" required>
-        <label class="personalContacts_tel_label" for="user-tel">Контактный телефон*:</label>
+        <label class="contacts-item__label--tel" for="user-tel">Контактный телефон*:</label>
       </p>
-      <p class="personalContacts_email">
-        <input class="personalContacts_email_input" type="email" name="user-email" id="user-email"
+      <p class="personal-contacts__email contacts-item">
+        <input class="contacts-item__input--email" type="email" name="user-email" id="user-email"
           placeholder="Введите e-mail" required>
-        <label class="personalContacts_email_label" for="user-email">Электронная почта*:</label>
+        <label class="contacts-item__label--email" for="user-email">Электронная почта*:</label>
       </p>
-    </section>
-    <section class="personalImpression">
-      <p class="personalImpression_header">Общее впечатление:</p>
-      <ul class="personalImpression_list">
-        <li class="personalImpression_list-item">
-          <input class="personalImpression_radioBtn" type="radio" name="good" id="good" checked>
-          <label class="personalImpression_label" for="good">Скорее положительное</label>
+    </fieldset>
+    <fieldset class="personal-impression">
+      <legend class="visually-hidden">Ваши впечатления</legend>
+      <p class="personal-impression__header">Общее впечатление:</p>
+      <ul class="personal-impression__list">
+        <li class="personal-impression__list-item radio-btn">
+          <input class="radio-btn__input" type="radio" name="good" id="good" checked>
+          <label class="radio-btn__label" for="good">Скорее положительное</label>
         </li>
-        <li class="personalImpression_list-item">
-          <input class="personalImpression_radioBtn" type="radio" name="bad" id="bad">
-          <label class="personalImpression_label" for="bad">Скорее отрицательное</label>
+        <li class="personal-impression__list-item radio-btn">
+          <input class="radio-btn__input" type="radio" name="bad" id="bad">
+          <label class="radio-btn__label" for="bad">Скорее отрицательное</label>
         </li>
-        <li class="personalImpression_list-item">
-          <input class="personalImpression_radioBtn" type="radio" name="dontKnow" id="dontKnow">
-          <label class="personalImpression_label" for="dontKnow">Затрудняюсь ответить</label>
-        </li>
-      </ul>
-    </section>
-    <section class="personalVisited">
-      <p class="personalVisited_header">Посещенные достопримечательности:</p>
-      <ul class="personalVisited_list">
-        <li class="personalVisited_list-item">
-          <input class="personalVisited_checkbox" type="checkbox" name="devilBridge" id="devilBridge" checked>
-          <label class="personalVisited_label" for="devilBridge">Мост Дьявола</label>
-        </li>
-        <li class="personalVisited_list-item">
-          <input class="personalVisited_checkbox" type="checkbox" name="mountainBell" id="mountainBell" checked>
-          <label class="personalVisited_label" for="mountainBell">Гора-Колокол</label>
-        </li>
-        <li class="personalVisited_list-item">
-          <input class="personalVisited_checkbox" type="checkbox" name="slidePark" id="slidePark" checked>
-          <label class="personalVisited_label" for="slidePark">Слайд-парк</label>
-        </li>
-        <li class="personalVisited_list-item">
-          <input class="personalVisited_checkbox" type="checkbox" name="redRock" id="redRock">
-          <label class="personalVisited_label" for="redRock">Красные скалы</label>
+        <li class="personal-impression__list-item radio-btn">
+          <input class="radio-btn__input" type="radio" name="dontKnow" id="dontKnow">
+          <label class="radio-btn__label" for="dontKnow">Затрудняюсь ответить</label>
         </li>
       </ul>
-    </section>
-    <section class="personalEmotions">
-      <p class="personalEmotions_header">Опишите свои эмоции:</p>
-      <textarea class="personalEmotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-      <button class="main-bottom__button button">
+    </fieldset>
+    <fieldset class="personal-visited">
+      <legend class="visually-hidden">Посещенные места</legend>
+      <p class="personal-visited__header">Посещенные достопримечательности:</p>
+      <ul class="personal-visited__list">
+        <li class="personal-visited__list-item checkbox-item">
+          <input class="checkbox-item__input" type="checkbox" name="devilBridge" id="devilBridge" checked>
+          <label class="checkbox-item__label" for="devilBridge">Мост Дьявола</label>
+        </li>
+        <li class="personal-visited__list-item">
+          <input class="checkbox-item__input" type="checkbox" name="mountainBell" id="mountainBell" checked>
+          <label class="checkbox-item__label" for="mountainBell">Гора-Колокол</label>
+        </li>
+        <li class="personal-visited__list-item">
+          <input class="checkbox-item__input" type="checkbox" name="slidePark" id="slidePark" checked>
+          <label class="checkbox-item__label" for="slidePark">Слайд-парк</label>
+        </li>
+        <li class="personal-visited__list-item">
+          <input class="checkbox-item__input" type="checkbox" name="redRock" id="redRock">
+          <label class="checkbox-item__label" for="redRock">Красные скалы</label>
+        </li>
+      </ul>
+    </fieldset>
+    <section class="personal-emotions">
+      <legend class="visually-hidden">Ваши эмоции</legend>
+      <p class="personal-emotions_header">Опишите свои эмоции:</p>
+      <textarea class="personal-emotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="main-bottom__button button" type="submit">
         Отправить отзыв
       </button>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__sedonaHash">
+    <a href="" class="page-footer__sedonaHash">
       #visitsedona
-    </p>
-    <div>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="twitter.com">twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="facebook.com">facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="youtube.com">youtube</a>
-        </li>
-      </ul>
-    </div>
+    </a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="twitter.com">twitter</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="facebook.com">facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="youtube.com">youtube</a>
+      </li>
+    </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
