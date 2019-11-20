@@ -9,8 +9,8 @@
 <body>
   <header class="page-header">
     <a><img class="page-header__logo" src="logo.img" alt="Логотип Седоны"></a>
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="index.html">Главная</a>
@@ -53,8 +53,8 @@
     <fieldset class="personal-contacts">
       <legend class="visually-hidden">Ваши контакты</legend>
       <p class="personal-contacts__tel contacts-item">
-        <input class="contacts-item__input--tel" type="tel" name="user-tel" id="user-tel"
-          placeholder="Введите телефон" required>
+        <input class="contacts-item__input--tel" type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон"
+          required>
         <label class="contacts-item__label--tel" for="user-tel">Контактный телефон*:</label>
       </p>
       <p class="personal-contacts__email contacts-item">
@@ -104,12 +104,14 @@
       </ul>
     </fieldset>
     <section class="personal-emotions">
-      <legend class="visually-hidden">Ваши эмоции</legend>
-      <p class="personal-emotions_header">Опишите свои эмоции:</p>
-      <textarea class="personal-emotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-      <button class="main-bottom__button button" type="submit">
-        Отправить отзыв
-      </button>
+      <form>
+        <h3 class="visually-hidden">Ваши эмоции</h3>
+        <p class="personal-emotions_header">Опишите свои эмоции:</p>
+        <textarea class="personal-emotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+        <button class="main-bottom__button button" type="submit">
+          Отправить отзыв
+        </button>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
