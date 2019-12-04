@@ -1,0 +1,30 @@
+@mixin text-style {
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@mixin no-padding-margin {
+  margin: 0px;
+  padding: 0px;
+}
+
+.photos-item__header {
+  @include text-style();
+  @include no-padding-margin();
+  font-weight: 700;
+}
+
+.photos-item__author {
+  @include text-style();
+  @include no-padding-margin();
+  color: #333333;
+  font-weight: 400;
+}
+
+.photos-item__likes {
+  @include text-style();
+  @include no-padding-margin();
+  font-weight: 700;
+}
