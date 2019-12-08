@@ -1,0 +1,9 @@
+.reasons-item__number {
+  @import "no-margin-padding";
+  @include no-margin-padding();
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
