@@ -1,3 +1,29 @@
+@import "no-margin-padding";
+
 .intro {
+  background-color: white;
+}
+
+.intro__title {
+  @include no-margin-padding();
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.intro__description {
+  @include no-margin-padding();
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.intro_bg {
   background-color: white;
 }

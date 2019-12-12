@@ -1,8 +1,0 @@
-.photos-item__author {
-  @import "no-margin-padding";
-  @include no-margin-padding();
-  @import "photos-header-text-style";
-  @include photos-header-text-style();
-  color: #333333;
-  font-weight: 400;
-}

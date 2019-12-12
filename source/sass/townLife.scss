@@ -1,3 +1,27 @@
+@import "no-margin-padding";
+
 .townLife {
   background-color: white;
+}
+
+.townLife__item {
+  background-color: white;
+}
+
+.townLife__item__description {
+  @include no-margin-padding();
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.townLife__header {
+  @include no-margin-padding();
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
 }

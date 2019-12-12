@@ -1,7 +1,5 @@
-.reasons-item__header {
-  @import "no-margin-padding";
-  @include no-margin-padding();
-
+@mixin form-header-text-style {
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
 }
 
@@ -34,50 +34,31 @@ html {
   overflow: hidden;
 }
 
+@import "fonts.scss";
 @import "page-header.scss";
-@import "page-header__logo.scss";
-@import "main-nav__toggle.scss";
 @import "main-nav.scss";
-@import "main-nav__list.scss";
 @import "site-list.scss";
-@import "site-list__item.scss";
 @import "page-main.scss";
 @import "intro.scss";
-@import "intro__title.scss";
-@import "intro__description.scss";
-@import "intro__bg.scss";
 @import "reasons.scss";
 @import "reasons-list.scss";
-@import "reasons-list__item.scss";
 @import "reasons-item.scss";
-@import "reasons-item__blueStyle.scss";
-@import "reasons-item__mainStyle.scss";
-@import "reasons-item__header.scss";
-@import "reasons-item__number.scss";
-@import "reasons-item__description.scss";
-@import "reasons-item__townLife.scss";
 @import "townLife.scss";
-@import "townLife__item.scss";
-@import "townLife__item__description.scss";
-@import "townLife__header.scss";
 @import "photos.scss";
 @import "photos-item.scss";
-@import "photos-item__img.scss";
 @import "photos-header-text-style.scss";
-@import "photos-item__header.scss";
-@import "photos-item__author.scss";
-@import "photos-item__likes.scss";
+@import "personal-data.scss";
+@import "personal-contacts.scss";
+@import "personal-impression.scss";
+@import "personal-visited.scss";
+@import "personal-emotions.scss";
+@import "radio-btn.scss";
+@import "checkbox-item.scss";
+@import "input-field.scss";
+@import "form-header-text-style.scss";
 @import "main-bottom.scss";
-@import "main-bottom__button.scss";
-@import "main-bottom__title.scss";
-@import "main-bottom__description.scss";
 @import "page-footer.scss";
-@import "page-footer__sedonaHash.scss";
-@import "page-footer__copyright.scss";
 @import "copyright.scss";
 @import "copyright__text.scss";
 @import "copyright__link.scss";
-@import "page-footer__social.scss";
 @import "social.scss";
-@import "social__item.scss";
-@import "social__link.scss";
