@@ -40,7 +40,7 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="personal-data">
         <legend class="visually-hidden">Ваше ФИО</legend>
-        <p class="personal-data__header">Представьтесь:</p>
+        <p class="feedback__header">Представьтесь:</p>
         <p class="input-field">
           <input class="input-field__input" type="text" name="user-name" id="user-name" required>
           <label class="input-field__label" for="user-name">Имя*:</label>
@@ -56,21 +56,21 @@
       </fieldset>
       <fieldset class="personal-contacts">
         <legend class="visually-hidden">Ваши контакты</legend>
-        <p class="personal-contacts__header">Контактная информация:</p>
+        <p class="feedback__header">Контактная информация:</p>
         <p class="input-field">
-          <input class="input-field__input--tel" type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон"
+          <input class="input-field__input input-field__input--tel" type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон"
             required>
-          <label class="input-field__label--tel" for="user-tel">Контактный телефон*:</label>
+          <label class="input-field__input input-field__label--tel" for="user-tel">Контактный телефон*:</label>
         </p>
         <p class="input-field">
-          <input class="input-field__input--email" type="email" name="user-email" id="user-email"
+          <input class="input-field__input input-field__input--email" type="email" name="user-email" id="user-email"
             placeholder="Введите e-mail" required>
-          <label class="input-field__label--email" for="user-email">Электронная почта*:</label>
+          <label class="input-field__input input-field__label--email" for="user-email">Электронная почта*:</label>
         </p>
       </fieldset>
       <fieldset class="personal-impression">
         <legend class="visually-hidden">Ваши впечатления</legend>
-        <p class="personal-impression__header">Ваше общее впечатление:</p>
+        <p class="feedback__header">Ваше общее впечатление:</p>
         <ul class="personal-impression__list">
           <li class="personal-impression__list-item radio-btn">
             <input class="radio-btn__input" type="radio" name="radio-impression" id="good" checked>
@@ -89,7 +89,7 @@
 
       <fieldset class="personal-visited">
         <legend class="visually-hidden">Посещенные места</legend>
-        <p class="personal-visited__header">Посещенные достопримечательности:</p>
+        <p class="feedback__header">Посещенные достопримечательности:</p>
         <ul class="personal-visited__list">
           <li class="personal-visited__list-item checkbox-item">
             <input class="checkbox-item__input" type="checkbox" name="devilBridge" id="devilBridge" checked>
@@ -111,7 +111,7 @@
       </fieldset>
       <div class="personal-emotions">
         <h3 class="visually-hidden">Ваши эмоции</h3>
-        <p class="personal-emotions_header">Опишите свои эмоции:</p>
+        <p class="feedback__header">Опишите свои эмоции:</p>
         <textarea class="personal-emotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         <button class="main-bottom__button button" type="submit">
           Отправить отзыв

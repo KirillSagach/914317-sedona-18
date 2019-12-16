@@ -1,14 +1,14 @@
 @import "no-margin-padding";
 
-.townLife {
+.town-life {
   background-color: white;
 }
 
-.townLife__item {
+.town-life__item {
   background-color: white;
 }
 
-.townLife__item__description {
+.town-life__item__description {
   @include no-margin-padding();
 
   font-size: 18px;
@@ -17,7 +17,7 @@
   text-transform: uppercase;
 }
 
-.townLife__header {
+.town-life__header {
   @include no-margin-padding();
 
   font-size: 18px;
