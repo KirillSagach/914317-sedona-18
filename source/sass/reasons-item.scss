@@ -1,0 +1,46 @@
+@import "no-margin-padding";
+
+.reasons-item {
+  background-color: white;
+}
+
+.reasons-item__townLife {
+  background-color: white;
+}
+
+.reasons-item__number {
+  @include no-margin-padding();
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.reasons-item__mainStyle {
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.reasons-item__header {
+  @include no-margin-padding();
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.reasons-item__description {
+  @include no-margin-padding();
+
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.reasons-item__blueStyle {
+  background-color: #81b3d2;
+  color: #ffffff;
+}

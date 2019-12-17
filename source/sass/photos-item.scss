@@ -1,0 +1,27 @@
+@import "no-margin-padding";
+
+.photos-item {
+  background-color: white;
+}
+
+.photos-item__likes {
+  @include no-margin-padding();
+  font-weight: 700;
+  color: #000000;
+}
+
+.photos-item__img {
+  background-color: white;
+}
+
+.photos-item__header {
+  @include no-margin-padding();
+  font-weight: 700;
+  color: #000000;
+}
+
+.photos-item__author {
+  @include no-margin-padding();
+  color: #333333;
+  font-weight: 400;
+}

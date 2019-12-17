@@ -1,0 +1,62 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "fonts.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "page-main.scss";
+@import "intro.scss";
+@import "reasons.scss";
+@import "reasons-list.scss";
+@import "reasons-item.scss";
+@import "town-life.scss";
+@import "photos.scss";
+@import "photos-item.scss";
+@import "photos-header-text-style.scss";
+@import "personal-data.scss";
+@import "personal-contacts.scss";
+@import "personal-impression.scss";
+@import "personal-visited.scss";
+@import "personal-emotions.scss";
+@import "radio-btn.scss";
+@import "checkbox-item.scss";
+@import "input-field.scss";
+@import "form-header-text-style.scss";
+@import "main-bottom.scss";
+@import "page-footer.scss";
+@import "copyright.scss";
+@import "social.scss";
