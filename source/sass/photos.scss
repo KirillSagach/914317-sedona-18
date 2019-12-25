@@ -1,3 +1,16 @@
-.photos {
-  background-color: white;
+@import "variables.scss";
+
+@media (min-width: $tablet-width) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos-item {
+    width: 50%;
+  }
+
+  .photos-item--full {
+    width: 100%;
+  }
 }

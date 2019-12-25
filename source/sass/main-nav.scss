@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .main-nav ul {
   @import "no-margin-padding";
   @include no-margin-padding();
@@ -8,6 +10,29 @@
   background-color: white;
 }
 
-.main-nav__toggle {
-  background-color: white;
+@media (min-width: $mobile-width) {
+  .main-nav {
+    order: 1;
+  }
+
+  .main-nav__toggle {
+    order: 3;
+    background-color: white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    color: black;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

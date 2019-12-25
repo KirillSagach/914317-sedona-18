@@ -1,7 +1,6 @@
-.reasons-list {
-  background-color: white;
-}
+@import "variables.scss";
 
-.reasons-list__item {
-  background-color: white;
+.reasons-list {
+  display: flex;
+  flex-direction: column;
 }

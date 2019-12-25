@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+
+  .container__inner {
+    margin: 0 auto;
+    padding: 0;
+    width: 648px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .container {
+    width: $dekstop-width;
+  }
+
+  .container__inner {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+  }
+}

@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Фото и видео городка Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header">
-    <a><img class="page-header__logo" src="logo.img" alt="Логотип Седоны"></a>
+  <header class="container page-header">
+    <a class="page-header__logo"><img src="logo.img" alt="Логотип Седоны"></a>
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -29,17 +30,17 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Фото и видео</h1>
-    <section class="intro">
-      <h2 class="intro__title">Фотографии от туристов</h2>
+  <main class="container page-main">
+    <h1 class="visually-hidden">Фотографии от туристов</h1>
+    <section class="container__inner intro">
+      <h2 class="intro__title">Фото и видео</h2>
       <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
       <img class="intro__bg" src="back-mobile.jpg" alt="Седона - городок, заслуживающий большего!">
     </section>
-    <section class="photos">
+    <section class="container__inner photos">
       <h2 class="visually-hidden">Лучшие фотографии</h2>
-      <div class="photos-item">
+      <div class="photos-item photos-item--full">
         <img class="photos-item__img" src="photo-1-mobile.jpg" alt="Неродные просторы">
         <h3 class="photos-item__header photos-header-text-style">
           Неродные просторы
@@ -88,7 +89,7 @@
         </p>
       </div>
     </section>
-    <section class="main-bottom">
+    <section class="container__inner main-bottom">
       <h2 class="visually-hidden">Видеопрезентация</h2>
       <p class="main-bottom__title">Все еще сомневаетесь?</p>
       <p class="main-bottom__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
@@ -98,25 +99,27 @@
       </video>
     </section>
   </main>
-  <footer class="page-footer">
-    <a href="" class="page-footer__sedonaHash">
-      #visitsedona
-    </a>
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="twitter.com" target="_blank" aria-label="twitter"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="facebook.com" target="_blank" aria-label="facebook"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="youtube.com" target="_blank" aria-label="youtube"></a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
-        Academy</a>
+  <footer class="container">
+    <div class="container__inner page-footer">
+      <a href="" class="page-footer__sedonaHash">
+        #visitsedona
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="twitter.com" target="_blank" aria-label="twitter"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="facebook.com" target="_blank" aria-label="facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="youtube.com" target="_blank" aria-label="youtube"></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
+          Academy</a>
+      </div>
     </div>
   </footer>
 </body>

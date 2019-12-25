@@ -1,3 +1,18 @@
+@import "variables.scss";
+
 .page-main {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
+
+/*@media (min-width: $mobile-width) {
+  .page-main {
+    width: $mobile-width;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+  }
+}*/

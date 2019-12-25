@@ -21,7 +21,7 @@ html {
   box-sizing: inherit;
 }
 
-.visuallyHidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -35,14 +35,17 @@ html {
 }
 
 @import "fonts.scss";
+@import "container.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
 @import "page-main.scss";
 @import "intro.scss";
 @import "reasons.scss";
+@import "feedback.scss";
 @import "reasons-list.scss";
 @import "reasons-item.scss";
+@import "town-life-block.scss";
 @import "town-life.scss";
 @import "photos.scss";
 @import "photos-item.scss";
