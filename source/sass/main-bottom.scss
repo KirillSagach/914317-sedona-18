@@ -1,7 +1,8 @@
 @import "no-margin-padding";
 
 .main-bottom {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-bottom__title {

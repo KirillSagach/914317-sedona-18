@@ -1,0 +1,26 @@
+@import "variables.scss";
+
+.feedback {
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feedback__item {
+    order: 2;
+    width: 100%;
+  }
+
+  .feedback__item--first {
+    order: 1;
+  }
+
+  .feedback__item--half-width {
+    width: 50%;
+  }
+}

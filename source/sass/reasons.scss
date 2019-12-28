@@ -1,3 +1,8 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+}
+
 .reasons ul {
   @import "no-margin-padding";
   @include no-margin-padding();

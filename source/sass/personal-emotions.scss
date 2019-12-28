@@ -1,3 +1,8 @@
-.personal-emotions {
-  background-color: white;
+@import "variables.scss";
+
+@media (min-width: $tablet-width) {
+  .personal-emotions {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -1,4 +1,5 @@
 @import "no-margin-padding";
+@import "variables.scss";
 
 .town-life {
   background-color: white;
@@ -24,4 +25,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .town-life {
+    display: flex;
+  }
 }

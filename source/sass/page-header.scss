@@ -1,7 +1,31 @@
-.page-header {
-  background-color: white;
+@import "variables.scss";
+
+@media (min-width: $mobile-width) {
+  .page-header {
+    width: $mobile-width;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header__logo {
+    order: 2;
+  }
 }
 
-.page-header__logo {
-  background-color: white;
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    position: absolute;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page-header {
+    width: $dekstop-width;
+  }
 }
