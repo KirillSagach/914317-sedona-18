@@ -22,9 +22,9 @@
 .reasons-item__description {
   @include no-margin-padding();
   order: 3;
-  font-size: 21px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 19px;
   text-transform: uppercase;
 }
 
@@ -32,14 +32,13 @@
   background-color: white;
 }
 
-.reasons-item__main-style {
-  background-color: #eeeeee;
-  color: #333333;
-}
-
 .reasons-item__blue-style {
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+.reasons-item__main-style {
+  background-color: #eeeeee;
 }
 
 @media (min-width: $mobile-width) {
@@ -49,16 +48,49 @@
     order: 3;
   }
 
+  .reasons-item__blue-style {
+    padding-top: 38px;
+  }
+
+  .reasons-item__blue-style--first {
+    padding-top: 83px;
+  }
+
+  .reasons-item__main-style {
+    padding-top: 24px;
+    padding-bottom: 34px;
+  }
+
+  .reasons-item__number {
+    margin-top: 8px;
+  }
+
+  .reasons-item__description {
+    margin-top: 17px;
+  }
+
   .reasons-item--first-item {
     order: 1;
   }
 
+  .reasons-item__town-life {
+    padding-top: 32px;
+  }
+
   .reasons-item--town-life {
     order: 2;
+    padding-top: 31px;
+    padding-bottom: 10px;
   }
 
   .reasons-item__bg {
+    margin-top: 42px;
     order: 4;
+  }
+
+  .reasons-item__blue-style--row,
+  .reasons-item__main-style {
+    text-align: center;
   }
 }
 
@@ -77,6 +109,7 @@
   .reasons-item__blue-style--row {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .reasons-item--row {

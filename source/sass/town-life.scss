@@ -12,7 +12,7 @@
 .town-life__item__description {
   @include no-margin-padding();
 
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
@@ -25,6 +25,26 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: $mobile-width) {
+  .town-life__header,
+  .town-life__item__description {
+    display: block;
+  }
+
+  .reasons-item__town-life {
+    padding-top: 32px;
+  }
+
+  .town-life__item {
+    padding-left: 50px;
+  }
+
+  .town-life__item__description {
+    margin-top: 14px;
+    padding-bottom: 28px;
+  }
 }
 
 @media (min-width: $tablet-width) {

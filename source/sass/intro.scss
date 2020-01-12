@@ -7,6 +7,10 @@
 }
 
 @media (min-width: $mobile-width) {
+  .intro {
+    padding-top: 40px;
+  }
+
   .intro__title {
     @include no-margin-padding();
 
@@ -14,21 +18,32 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
     text-transform: uppercase;
     color: #333333;
   }
 
   .intro__description {
     @include no-margin-padding();
+    margin-top: 26px;
     order: 3;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+    text-align: center;
     text-transform: uppercase;
     color: #333333;
   }
 
+  .intro__description--photo {
+    line-height: 24px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
   .intro__bg {
     order: 1;
+    width: 768px;
+    height: 389px;
   }
 }
