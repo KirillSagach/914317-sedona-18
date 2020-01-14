@@ -21,6 +21,9 @@
     text-align: center;
     text-transform: uppercase;
     color: #333333;
+
+    padding-left: 1px;
+    padding-right: 1px;
   }
 
   .intro__description {
@@ -41,9 +44,15 @@
     padding-right: 4px;
   }
 
-  .intro__bg {
+  /*.intro__bg {
     order: 1;
     width: 768px;
+    height: 389px;*/
+
+  .intro__bg {
+
     height: 389px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
   }
 }
